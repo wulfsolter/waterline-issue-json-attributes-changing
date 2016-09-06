@@ -5,7 +5,7 @@ a [Sails](http://sailsjs.org) application to reproduce waterline issue https://g
 * `$ sails lift`
 * visit `http://localhost:1337/cars/test`
 
-Input does not match created output
+Input does not match created output. `driver.whereFrom` became `driver.where_from` due to `columnName` transformation of `Cars.whereFrom`.
 
     {
       "input": {
