@@ -48,3 +48,22 @@ when all that has happened is
     });
 
 As Cars model has a root property called 'whereFrom', other JSON props which also contain the key 'whereFrom' get their key renamed.
+
+Cars model:
+
+    attributes: {
+      name: {
+        type:     'string',
+      },
+
+      whereFrom: {
+        type:       'json',
+        columnName: 'where_from',
+      },
+
+      driver: {
+        type:     'json',
+      },
+
+    }
+
