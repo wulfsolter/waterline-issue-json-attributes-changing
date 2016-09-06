@@ -46,3 +46,5 @@ when all that has happened is
     Cars.create(car).exec((error, createdCar) => {
       res.send({input: car, output: createdCar });
     });
+
+As Cars model has a root property called 'whereFrom', other JSON props which also contain the key 'whereFrom' get their key renamed.
